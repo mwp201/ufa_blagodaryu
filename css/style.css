@@ -168,7 +168,7 @@ body {
 }
 
 
-/*--- модальное окно Вход на сайт ----*/
+/*--- модальное окно отправить письмо ----*/
 
 #modal_window_reg {
     display: none;
@@ -202,32 +202,30 @@ body {
 .modal-window-container {
     width: 630px;
     min-width: 200px;
-    padding: 25px 35px;
+    padding: 15px 35px 25px 35px;
     text-align: left;
     white-space: normal;
     background-color: #fff;
     border-radius: 3px;
 }
 
-.modal-window-title h2 {
-    float: left;
-    color: #21411e;
-    margin: 5px 332px 30px 0;
+.modal-window-close {
+    margin-bottom: 20px;
 }
 
-.modal-window-close {
+.icon-close {
     display: inline-block;
     vertical-align: top;
     color: red;
     position: absolute;
     margin-top: 0;
-    margin-left: 0;
+    margin-left: 600px;
     width: 28px;
     height: 28px;
     border-radius: 50%;
 }
 
-.modal-window-close:before {
+.icon-close:before {
     content: '';
     position: absolute;
     top: 13px;
@@ -239,7 +237,7 @@ body {
     transform: rotate(-45deg);
 }
 
-.modal-window-close:after {
+.icon-close:after {
     content: '';
     position: absolute;
     top: 13px;
@@ -251,19 +249,35 @@ body {
     transform: rotate(45deg);
 }
 
-.modal-window-close:hover {
+.icon-close:hover {
     color: #fff;
     background-color: red;
+}
+
+.modal-window-send-mail label {
+    display: inline-block;
+    width: 260px;
+    vertical-align: top;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.input-row {
+    display: inline-block;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.input-row:nth-child(2) {
+    margin-right: 20px;
 }
 
 .input-row input[type=email],
 .input-row input[type=text],
 .text-row textarea {
-    display: inline-block;
-    vertical-align: top;
     width: 258px;
     margin-bottom: 15px;
-    padding: 17px 20px;
+    padding: 12px 20px;
     font-size: 16px;
     border-radius: 3px;
     border: 1px solid #000;
@@ -277,13 +291,13 @@ body {
 
 .text-row textarea {
     width: 583px;
+    margin-bottom: 20px;
     resize: none;
 }
 
 .modal-window-send-mail input[type=submit] {
     display: inline-block;
     margin-left: 196px;
-    margin-bottom: 15px;
     padding: 10px 20px;
     vertical-align: top;
     color: #000;
@@ -293,6 +307,11 @@ body {
     border-radius: 2px;
     background-color: #fff;
     outline: none;
+}
+
+.modal-window-send-mail input[type=submit]:hover {
+    color: #cb6675;
+    border: 1px solid #cb6675;
 }
 
 

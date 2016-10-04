@@ -44,10 +44,9 @@ body {
 
 .main-title {
     margin: 0;
-    color: #f4f4f4;
     font-size: 24px;
     text-align: center;
-    font-weight: lighter;
+     font-weight: normal;
 }
 
 .promoblock {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>БлагоДарю</title>
@@ -18,6 +19,7 @@
             <img class="logo" src="img/logo.png" alt="логотип сайта" width="150" height="162">
             <span class="contact">Телефон для связи 8-927-335-01-64</span>
             <div class="slogan"></div>
+            <a class="btn" href="#" onclick="showModalWindow('modal_window_reg')" title="Написать письмо">Есть вопросы? Напишите нам!</a>
             <h1 class="main-title">Приносите вещи в любом состоянии, не выбрасывайте на свалки!!!</h1>
         </div>
     </header>
@@ -56,7 +58,49 @@
             <span class="hub-text">Участник 90 days challenge</span>
         </div>
     </footer>
+
+    <div class="fixed-overlay" id="modal_window_reg">
+        <div class="modal">
+            <div class="modal-window-container claerfix">
+                <div class="modal-window-title clearfix">
+                    <h2>Написать письмо</h2>
+                    <a href="#" class="modal-window-close" title="Закрыть окно" onclick="closeModalWindow('modal_window_reg')"></a>
+                </div>
+                <!-- форма отправки почты, данные отправляются скрипту send_mail.php -->
+                <form class="modal-window-send-mail clearfix" action="send_mail.php" method="post">
+                    <div class="input-row">
+                        <input class="" type="text" name="user_name" placeholder="Ваше имя" required>
+                        <input class="" type="email" name="user_email" placeholder="Ваш e-mail" required>
+                    </div>
+                    <div class="text-row">
+                        <textarea name="letter_text" id="" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+                    </div>
+                    <input type="submit" value="Отправить письмо">
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=owUuHIIm6ZjjGPj2Qb633uxSJWlFIGvq&amp;width=940&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true;id=yandex-map"></script>
+    <script>
+        //показать модальное окно
+        function showModalWindow(elem) {
+            var element = document.getElementById(elem);
+            element.style.display = 'block';
+        }
+        //скрыть модальное окно
+        function closeModalWindow(elem) {
+            var element = document.getElementById(elem);
+            element.style.display = 'none';
+        }
+        //скрыть модальное окно при нажатии на Esc
+        window.addEventListener("keydown", function (event) {
+            if (event.keyCode == 27) {
+                var modal_window_reg = document.getElementById('modal_window_reg');
+                modal_window_reg.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 
 </html>

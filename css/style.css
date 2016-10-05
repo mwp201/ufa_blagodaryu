@@ -79,6 +79,7 @@ img {
     max-width: 100%;
     height: auto;
     width: auto\9;
+    vertical-align: top;
     /* ie8 */
 }
 
@@ -375,21 +376,37 @@ img {
     .logo {
         margin-top: 20px;
         margin-bottom: 20px;
-        margin-left: 60px;
+        margin-left: 50px;
     }
     .contact {
         display: inline;
+        font-size: 16px;
     }
     .slogan {
         width: 260px;
         height: 64px;
-        margin-left: 5px;
-        margin-bottom: 10px;
+        margin-left: 0;
+        margin-bottom: 20px;
         background: url(../img/slogan-260.png) 0 0 no-repeat;
     }
     .btn {
         width: 150px;
-        margin-left: 20px;
+        margin-left: 30px;
+    }
+    .main-footer {
+        padding: 30px 0;
+    }
+    .main-footer p,
+    .main-footer a,
+    .hub-text {
+        font-size: 16px;
+    }
+    .main-footer p {
+        margin-top: 255px;
+    }
+    .social {
+        margin-right: 0;
+        margin-left: 77px;
     }
     html {
         -webkit-text-size-adjust: none;
@@ -398,11 +415,59 @@ img {
     .main-footer {
         width: 95%;
     }
+    .main-header {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
     .container {
-        width: 80%;
+        width: 90%;
         padding: 3%;
     }
-    #yandex-map {
-        display: none;
+    .hub {
+        margin-right: 0;
+    }
+    .item {
+        display: block;
+        width: 90%;
+        min-height: 0;
+        padding: 3%;
+        margin-right: 0;
+        font-size: 16px;
+    }
+    .map {
+        width: 260px;
+        height: 160px;
+    }
+    .modal-window-container {
+        width: 260px;
+        padding: 5px 10px;
+    }
+    .input-row {
+        width: 230px;
+        margin-top: 0;
+    }
+    .input-row input[type=email],
+    .input-row input[type=text],
+    .text-row textarea {
+        width: 235px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .text-row textarea {
+        margin-bottom: 10px;
+        height: 145px;
+    }
+    .modal-window-send-mail input[type=submit] {
+        margin-left: 26px;
+        margin-bottom: 10px;
+    }
+    .modal-window-send {
+        width: 240px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
+    }
+    .modal-window-send-mail .icon-close {
+        margin-left: 225px;
     }
 }

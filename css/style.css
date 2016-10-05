@@ -75,6 +75,13 @@ body {
     font-size: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+}
+
 .item {
     display: inline-block;
     vertical-align: top;
@@ -316,3 +323,86 @@ body {
 
 
 /*--- конец модального окна Вход на сайт ---*/
+
+.modal-window-send {
+    width: 500px;
+    min-width: 200px;
+    padding: 1px 35px 25px 35px;
+    color: red;
+    text-align: center;
+    white-space: normal;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.modal-window-send .btn {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+
+/*---   Размер экрана меньше 980px    ----*/
+
+@media screen and (max-width: 980px) {
+    .main-header,
+    .main-footer {
+        width: 95%;
+    }
+    .container {
+        width: 90%;
+        padding: 3% 4%;
+    }
+}
+
+
+/*---  Размер экрана меньше 650px ---*/
+
+@media screen and (max-width: 650px) {
+    .main-header,
+    .main-footer {
+        height: auto;
+    }
+    .container {
+        width: 90%;
+        padding: 3% 4%;
+    }
+}
+
+
+/*---  Размер экрана меньше 480px ---*/
+
+@media screen and (max-width: 480px) {
+    .logo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 60px;
+    }
+    .contact {
+        display: inline;
+    }
+    .slogan {
+        width: 260px;
+        height: 64px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        background: url(../img/slogan-260.png) 0 0 no-repeat;
+    }
+    .btn {
+        width: 150px;
+        margin-left: 20px;
+    }
+    html {
+        -webkit-text-size-adjust: none;
+    }
+    .main-header,
+    .main-footer {
+        width: 95%;
+    }
+    .container {
+        width: 80%;
+        padding: 3%;
+    }
+    #yandex-map {
+        display: none;
+    }
+}

@@ -342,58 +342,30 @@ img {
 }
 
 
-/*---   Размер экрана меньше 980px    ----*/
+/*---   Размер экрана больше 651px и меньше 770px    ----*/
 
-@media screen and (max-width: 980px) {
-    .main-header,
-    .main-footer {
-        width: 95%;
-    }
-    .container {
-        width: 90%;
-        padding: 3% 4%;
-    }
-}
-
-
-/*---  Размер экрана меньше 650px ---*/
-
-@media screen and (max-width: 650px) {
-    .main-header,
-    .main-footer {
-        height: auto;
-    }
-    .container {
-        width: 90%;
-        padding: 3% 4%;
-    }
-}
-
-
-/*---  Размер экрана меньше 480px ---*/
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width:651px) and (max-width:770px) {
     .logo {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 50px;
+        display: block;
+        margin: 20px auto;
     }
     .contact {
-        display: inline;
-        font-size: 16px;
+        display: block;
+        width: 100%;
     }
     .slogan {
-        width: 260px;
-        height: 64px;
+        width: 680px;
+        height: 166px;
         margin-left: 0;
-        margin-bottom: 20px;
-        background: url(../img/slogan-260.png) 0 0 no-repeat;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        background: url(../img/slogan-720.png) 0 0 no-repeat;
     }
     .btn {
-        width: 150px;
-        margin-left: 30px;
+        margin-left: 175px;
     }
     .main-footer {
+        width: 95%;
         padding: 30px 0;
     }
     .main-footer p,
@@ -406,16 +378,192 @@ img {
     }
     .social {
         margin-right: 0;
-        margin-left: 77px;
+        margin-left: 93px;
     }
     html {
         -webkit-text-size-adjust: none;
     }
-    .main-header,
+    .main-header {
+        width: 95%;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .container {
+        width: 90%;
+        padding: 0 3%;
+    }
+    .hub {
+        margin-right: 0;
+    }
+    .hub-text {
+        margin-left: 56px;
+    }
+    .item {
+        display: block;
+        width: 90%;
+        min-height: 0;
+        padding: 3%;
+        margin-right: 0;
+        font-size: 16px;
+    }
+    .map {
+        width: 670px;
+        height: 160px;
+    }
+}
+
+
+/*---  Размер экрана больше 481px и меньше 650px ---*/
+
+@media screen and (min-width:481px) and (max-width:650px) {
+    .logo {
+        display: block;
+        margin: 20px auto;
+    }
+    .contact {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+    }
+    .slogan {
+        width: 500px;
+        height: 122px;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: url(../img/slogan-520.png) 0 0 no-repeat;
+    }
+    .btn {
+        margin-left: 95px;
+    }
     .main-footer {
         width: 95%;
+        padding: 30px 0;
+    }
+    .main-footer p,
+    .main-footer a,
+    .hub-text {
+        font-size: 16px;
+    }
+    .main-footer p {
+        margin-top: 255px;
+    }
+    .social {
+        margin-right: 0;
+        margin-left: 23px;
+    }
+    html {
+        -webkit-text-size-adjust: none;
     }
     .main-header {
+        width: 95%;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .container {
+        width: 90%;
+        padding: 0 3%;
+    }
+    .hub {
+        margin-right: 0;
+    }
+    .hub-text {
+        margin-top: 10px;
+    }
+    .item {
+        display: block;
+        width: 90%;
+        min-height: 0;
+        padding: 3%;
+        margin-right: 0;
+        font-size: 16px;
+    }
+    .map {
+        width: 480px;
+        height: 160px;
+    }
+    .modal-window-container {
+        width: 340px;
+    }
+    .input-row {
+        width: 230px;
+        margin-top: 0;
+    }
+    .input-row input[type=email],
+    .input-row input[type=text],
+    .text-row textarea {
+        width: 305px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .text-row textarea {
+        margin-bottom: 10px;
+        height: 145px;
+    }
+    .modal-window-send-mail input[type=submit] {
+        margin-left: 55px;
+    }
+    .modal-window-send {
+        width: 240px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
+    }
+    .modal-window-send-mail .icon-close {
+        margin-left: 332px;
+    }
+}
+
+
+/*---  Размер экрана меньше 480px ---*/
+
+@media screen and (max-width: 480px) {
+    .logo {
+        display: block;
+        margin: 20px auto;
+    }
+    .contact {
+        width: 100%;
+        font-size: 16px;
+    }
+    .slogan {
+        width: 260px;
+        height: 64px;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: url(../img/slogan-260.png) 0 0 no-repeat;
+    }
+    .btn {
+        width: 150px;
+        margin-left: 30px;
+    }
+    .main-footer {
+        width: 95%;
+        padding: 30px 0;
+    }
+    .main-footer p,
+    .main-footer a,
+    .hub-text {
+        font-size: 16px;
+    }
+    .main-footer p {
+        margin-top: 255px;
+        margin-bottom: 20px;
+    }
+    .social {
+        margin-right: 0;
+        margin-left: 77px;
+    }
+    .hub-text {
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+    html {
+        -webkit-text-size-adjust: none;
+    }
+    .main-header {
+        width: 95%;
         padding-top: 20px;
         margin-bottom: 20px;
     }
@@ -467,7 +615,7 @@ img {
         padding-right: 10px;
         font-size: 16px;
     }
-    .modal-window-send-mail .icon-close {
+    .icon-close {
         margin-left: 225px;
     }
 }
